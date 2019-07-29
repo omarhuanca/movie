@@ -1,0 +1,12 @@
+{
+  "name": "podcasts",
+  "private": true,
+  "scripts": {
+    "start": "meteor run"
+  },
+  "dependencies": {
+    "babel-runtime": "^6.18.0",
+    "meteor-node-stubs": "~0.2.0",
+    "simpl-schema": "^1.5.5"
+  }
+}

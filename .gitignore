@@ -1,0 +1,5 @@
+.meteor/local
+.meteor/meteorite
+.idea
+.uploads
+node_modules

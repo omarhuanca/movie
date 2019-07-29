@@ -1,0 +1,13 @@
+<template name="movies">
+  <h2> List Movies </h2>
+  {{> Template.dynamic template="addEditMovie" data=editing}}
+  <ul>
+    {{#each movies}}
+    <li>
+      {{ name }}
+      <button class="edit">Edit</button>
+      <button class="remove">Remove</button>
+    </li>
+    {{/each}}
+  </ul>
+</template>
