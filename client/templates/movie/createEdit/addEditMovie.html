@@ -1,24 +1,23 @@
 <template name="addEditMovie">
   <form id="form-movie">
     <div>
-      <label> Name </label>
-      <input type="text" name="name" placeholder="Name" />
+      <label> Name Movie </label>
+      <input type="text" name="name" placeholder="Name" value="{{editing.name}}"/>
     </div>
     <div>
-      <label> Description </label>
-      <textarea name="description" placeholder="Description"></textarea>
+      <label> Description Movie </label>
+      <textarea name="description" placeholder="Description" value="{{editing.description}}"></textarea>
     </div>
       <label> Date Release </label>
-      <input type="text" name="release" placeholder="Release"/>
+      <input type="text" name="release" placeholder="Release" value="{{editing.release}}"/>
     <div>
       <label> mount </label>
-      <input type="text" name="mount" placeholder="Mount"/>
+      <input type="text" name="mount" placeholder="Mount" value="{{editing.mount}}"/>
     </div>
     <div>
-      <h5> Heroes </h5>
+      <h3> Heroes </h3>
       {{#each heroes}}
       <label>
-        <h2> Hero </h2>
         <input type="checkbox" name="heroes" value="{{_id}}"> {{name}}
       </label>
       {{/each}}

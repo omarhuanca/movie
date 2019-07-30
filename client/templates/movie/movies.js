@@ -15,7 +15,7 @@ Template.movies.helpers({
   },
   editing() {
     const editing = Template.instance().editing;
-    return { _id: editing.get, editing}
+    return { _id: editing.get(), editing}
   },
 });
 
