@@ -3,7 +3,9 @@
 Run Project
 
 $ cd movie
+
 $ npm install
+
 $ npm start
 
 Tools
